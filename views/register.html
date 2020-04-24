@@ -6,7 +6,7 @@
 <h1 class="title d-flex justify-content-center">Crie sua conta</h1>
 <hr />
 <form onsubmit="send(event)" data-bind="submit: submitForm" id="form" method="POST" action="/register">
-    <div class="row">
+    <div class="form-row row">
         <div class="col-12" data-bind="with: alert">
             <div class="alert" data-bind="text: msgAlert,
                                           css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
