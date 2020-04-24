@@ -1,6 +1,6 @@
 nav.navbar {
     background-color: black;
-    height: 100px;
+    height: 150px;
 }
 
 div ul li a.nav-link{
@@ -9,6 +9,3 @@ div ul li a.nav-link{
     font-family: 'Arvo', serif;
 }
 
-ul.navbar-nav {
-    margin-left: 415px;
-}

@@ -103,7 +103,8 @@
     }
       
   else {
-    this.alert({show: true, msgAlert: "Cadastro concluído com sucesso", type: "sucess"});;
+    this.alert({show: true, msgAlert: "Cadastro concluído com sucesso", type: "info"});;
+    window.open("/carrinho")
       } 
  }
  }

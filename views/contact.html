@@ -1,0 +1,62 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+
+<div class="middle-layout">
+  <div class="list">
+    <h1 class="title d-flex justify-content-center">Entre em contato</h1>
+  </div>
+  <hr>
+  <br>
+  <div class="form_send d-flex justify-content-center">
+    <form onsubmit="send(event)">
+        <div class="row">
+            <div class="col-12" data-bind="with: alert">
+                <div class="alert" data-bind="text: msgAlert,
+                                              css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                              visible: show">
+    
+                </div>
+            </div>
+          <div class="col-6">
+            <label>Nome</label>
+            <input type="text" name="" value="" id="name" class="form-control" data-bind="value: name">
+          </div>
+          <div class="col-6">
+            <label>Email</label>
+            <input type="text" name="" value="" id="email" class="form-control" data-bind="value: email">
+          </div>
+          <div class="col-12">
+            <label>Mensagem</label>
+            <textarea id="message" class="form-control" data-bind="value: msg"></textarea>
+          </div>
+      </div>
+      <br>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+              <div class="enter">
+                <a href="#" class="btn d-flex justify-content-center" type="submit" data-bind="click: submitForm">Enviar</a>
+                </div>
+                <div class="limpa">
+                    <button type="reset" class="clear btn btn-danger">Limpar</button>
+                </div>
+        </div>
+        </div>
+      </form>
+    </div>
+  <br>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/styles/contact.css">
+<script src="/js/contact.js"></script>
+<script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+{% endblock %}

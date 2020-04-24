@@ -47,3 +47,16 @@ app.get('/acessories', (req, res) => {
   res.render('acessories.html')
 });
 
+app.get('/carrinho', (req, res) => {
+  res.render('carrinho.html')
+});
+
+app.get('/product', (req, res) => {
+  res.render('product.html')
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact.html')
+});
+
+

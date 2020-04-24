@@ -1,0 +1,33 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+<!-- PÁGINA INDIVIDUAL DO PRODUTO -->
+
+<div class="box p-5 jumbotron mt-4">
+    <h3 class="price big float-right">R$ 25.000,00</h3>
+    <h1 class="title d-flex justify-content-center">KTM 250 EXC-F 2020</h1>
+  <br>
+  <h4 class="description-title p-3">DESCRIÇÃO</h4>
+  
+  <p class="p p-3">O menor modelo da linha KTM de 4 tempos tem uma mordida surpreendentemente grande para o seu tamanho. Com seu motor super compacto e poderoso, peso mínimo e manuseio fantástico, é uma ótima opção para amadores motivados e profissionais ambiciosos! Graças ao seu avançado sistema de injeção de combustível, este motor oferece desempenho líder da classe, bastante torque, excelente resposta do acelerador e entrega controlada de energia. A nova 250 EXC-F possui um novo quadro que contribui para facilitar ainda mais a pilotagem, inspirando total confiança ao piloto e progressão na pilotagem.</p>
+
+  <input type="hidden" name="productId" id="productId" value="" />
+  <p class="p-3 d-flex justify-content-center">
+    <img src="https://www.ktm.com/globalassets/products-pim-data/ke2-motorcycles/enduro/4-stroke/250-exc-f3/250-exc-f-2020/f8140t9/pho_bike_90_re.png" width="50%" alt="">
+  </p>
+  <hr />
+  <a href="/carrinho" class="btn d-flex justify-content-center">Adicionar ao carrinho</a>
+  <div class="clearfix"></div>
+</div>
+
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+{% block script %}
+<link rel="stylesheet" href="/styles/product.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% endblock %}

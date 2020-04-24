@@ -1,0 +1,30 @@
+h1.title {
+    color: black;
+    font-family: 'Arvo', serif;
+}
+
+h3.price {
+    color: black;
+    font-family: 'Arvo', serif;
+    color: green;
+    font-weight: bold;
+}
+
+h4.description-title {
+    color: black;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+}
+
+p.p {
+    color: black;
+}
+
+a.btn {
+    background-color: #FF6600;
+    color: black;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    float: right;
+}

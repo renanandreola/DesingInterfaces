@@ -1,0 +1,96 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+<!-- PÁGINA DO CARRINHO -->
+
+<div class="row">
+  <div class="col-12 p-5">
+    <div class="first-box jumbotron">
+        <h1 class="title d-flex justify-content-center">Digite seu e-mail e senha para continuar</h1>
+      <form class="mt-5" method="post">
+        <div class="col-12" data-bind="with: alert">
+            <div class="alert" data-bind="text: msgAlert,
+                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                          visible: show">
+
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label for="">Email</label>
+            <input type="" name="" value="" id="email" class="form-control" placeholder="exemplo@exemplo.com" data-bind="value: email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+              <label for="">Senha</label>
+            <input type="password" placeholder="senha" name="" value="" id="password" class="form-control" data-bind="value: senha">
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="buttons col-12 col-sm-3 mt-4 text-center">
+            <a href="#" class="orange btn btn- d-flex justify-content-center" id="enter" type="submit" data-bind="click: submitForm">Entrar</a>
+            <br>
+            <a href="/register" class="btn btn-success btn-block">Cadastre-se</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+<div class="col-12">
+  <div class="cart jumbotron">
+    <h5 class="mb-3 d-flex justify-content-center">Meu Carrinho</h5>
+    <div id="cart" >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://motomais.motosport.com.pt/wp-content/uploads/2019/06/bell-moto-9-mips-helmet-blackwhite3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">PRODUTO: <br>CAPACETE FASTHOUSE</h5>
+                  <h5 class="card-price">VALOR INDIVIDUAL: <br>R$ 80,00</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://motomais.motosport.com.pt/wp-content/uploads/2019/06/bell-moto-9-mips-helmet-blackwhite3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">PRODUTO: <br>CAPACETE FASTHOUSE</h5>
+                  <h5 class="card-price">VALOR INDIVIDUAL: <br>R$ 80,00</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://motomais.motosport.com.pt/wp-content/uploads/2019/06/bell-moto-9-mips-helmet-blackwhite3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">PRODUTO: <br>CAPACETE FASTHOUSE</h5>
+                  <h5 class="card-price">VALOR INDIVIDUAL: <br>R$ 80,00</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <h5 class="total d-flex justify-content-center">TOTAL A PAGAR: R$ 240,00</h5>
+    <a href="#" class="finish btn btn- d-flex justify-content-center">Finalizar pedido</a>
+  </div>
+</div>
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+{% block script %}
+<script src="/js/carrinho.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/styles/carrinho.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+{% endblock %}

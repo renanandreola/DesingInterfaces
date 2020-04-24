@@ -1,0 +1,25 @@
+h1.title {
+    color: black;
+    font-family: 'Arvo', serif;
+}
+
+div a.btn {
+    background-color: #FF6600;
+    color: black;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+
+div.row button.clear {
+    color: black;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+
+div.enter {
+    margin-right: 4px;
+}
+
+div.limpa {
+    margin-left: 4px;
+}
