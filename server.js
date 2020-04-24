@@ -59,4 +59,12 @@ app.get('/contact', (req, res) => {
   res.render('contact.html')
 });
 
+app.get('/loginadm', (req, res) => {
+  res.render('loginadm.html')
+});
+
+app.get('/adm', (req, res) => {
+  res.render('adm.html')
+});
+
 

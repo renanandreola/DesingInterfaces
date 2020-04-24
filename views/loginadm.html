@@ -1,0 +1,54 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+<!-- PÁGINA DO CARRINHO -->
+
+<div class="row">
+  <div class="col-12 p-5">
+    <div class="first-box jumbotron">
+        <h1 class="title d-flex justify-content-center"><img class="mr-2" src="https://images.clipartlogo.com/files/images/15/159482/signs-hazard-warning_p" height="42" width="42" alt="">ÁREA RESTRITA</h1>
+        <br>
+        <h1 class="title d-flex justify-content-center">Você é administrador?</h1>
+      <form class="mt-5" method="post">
+        <div class="col-12" data-bind="with: alert">
+            <div class="alert" data-bind="text: msgAlert,
+                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                          visible: show">
+
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label for="">Email</label>
+            <input type="" name="" value="" id="email" class="form-control" placeholder="exemplo@exemplo.com" data-bind="value: email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+              <label for="">Senha</label>
+            <input type="password" placeholder="senha" name="" value="" id="password" class="form-control" data-bind="value: senha">
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="buttons col-12 col-sm-3 mt-4 text-center">
+            <a href="#" class="orange btn btn- d-flex justify-content-center" id="enter" type="submit" data-bind="click: submitForm">Entrar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+{% block script %}
+<script src="/js/loginadm.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/styles/loginadm.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+{% endblock %}

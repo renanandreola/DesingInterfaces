@@ -1,0 +1,33 @@
+div.box {
+    background-color: rgb(238, 238, 238);
+    height: 500px;
+}
+
+div.div-title {
+    background-color: yellow;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Arvo', serif;
+}
+
+div.tarja{
+    background-color: #005a92;
+    height: 70px;
+    border-radius: 10px;
+}
+
+div.tarja h4{
+    color: white;
+    text-align: center;
+    height: 70px;
+    font-size: 30px;
+    padding-top: 18px;
+    font-family: 'Arvo', serif;
+}
+
+div a.orange{
+    background-color: #FF6600;
+    color: black;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}

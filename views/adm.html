@@ -1,0 +1,171 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+<div class="div-title">
+    <h1 class="title d-flex justify-content-center">Olá administrador</h1>
+</div>
+
+<br>
+<hr>
+
+<div class="box">
+    <div class="tarja">
+        <h4>Encontrar motos</h4>
+    </div>        
+<br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <form action="">
+            <div class="col-6">
+                <label>Marca</label>
+                <select class="form-control" id="state" class="form-control" data-bind="options: userState">
+                   
+                    <option value="">Selecione</option>
+                    <option value="">Agrale</option>
+                    <option value="">Honda</option>
+                    <option value="">Kawasaki</option>
+                    <option value="">KTM</option>
+                    <option value="">Suzuki</option>
+                    <option value="">Yamaha</option>
+                </select>
+            </div>
+        
+            <div class="col-6">
+                <label>Modelo</label>
+                <select class="form-control" id="state" class="form-control" data-bind="options: userState">
+                   
+                    <option value="">Selecione</option>
+                    <option value="">Modelo 1</option>
+                    <option value="">Modelo 2</option>
+                    <option value="">Modelo 3</option>
+                    <option value="">Modelo 4</option>
+                    <option value="">Modelo 5</option>
+                    <option value="">Modelo 6</option>
+                </select>
+            </div>
+        
+            <div class="col-6">
+                <label>Ano</label>
+                <select class="form-control" id="state" class="form-control" data-bind="options: userState">
+                   
+                    <option value="">Selecione</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                    <option value="">1015</option>
+                    <option value="">1014</option>
+                    <option value="">1013</option>
+                    <option value="">1012</option>
+                    <option value="">1011</option>
+                </select>
+            </div>
+        
+            <div class="col-6">
+                <label>Faixa de preços</label>
+                <select class="form-control" id="state" class="form-control" data-bind="options: userState">
+                   
+                    <option value="">Selecione</option>
+                    <option value="">R$ 1.000,00 à 2.000,00</option>
+                    <option value="">R$ 2.000,00 à 4.000,00</option>
+                    <option value="">R$ 4.000,00 à 8.000,00</option>
+                    <option value="">R$ 8.000,00 à 16.000,00</option>
+                    <option value="">R$ 16.000,00 à 22.000,00</option>
+                    <option value="">R$ 22.000,00 à 30.000,00</option>
+                    <option value="">Acima de R$ 30.000,00</option>
+                </select>
+            </div>
+<br>
+<br>
+        <div class="search" style="width: 270px;">
+            <a href="#" class="orange btn btn- d-flex justify-content-center">Buscar</a>
+        </div>
+        </form>
+      </div>
+      <div class="col-sm">
+        <table class="table table-striped col-6 float-right">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Ano</th>
+                <th scope="col">Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Marca x</td>
+                <td>Modelo x</td>
+                <td>Ano x</td>
+                <td>Preço x</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+{% block script %}
+<script src="/js/adm.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/styles/adm.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+{% endblock %}
