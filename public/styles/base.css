@@ -1,0 +1,8 @@
+nav.navbar {
+    background-color: #FF6600;
+}
+
+div ul li a.nav-link{
+    color: black;
+    font-weight: bold;
+}
