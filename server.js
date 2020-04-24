@@ -34,3 +34,16 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index.html')
 });
+
+app.get('/register', (req, res) => {
+  res.render('register.html')
+});
+
+app.get('/motorcycle', (req, res) => {
+  res.render('motorcycle.html')
+});
+
+app.get('/acessories', (req, res) => {
+  res.render('acessories.html')
+});
+

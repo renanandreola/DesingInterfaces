@@ -1,8 +1,14 @@
 nav.navbar {
-    background-color: #FF6600;
+    background-color: black;
+    height: 100px;
 }
 
 div ul li a.nav-link{
-    color: black;
+    color: white;
     font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+
+ul.navbar-nav {
+    margin-left: 415px;
 }
