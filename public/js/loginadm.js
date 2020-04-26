@@ -20,7 +20,7 @@ function formViewModel() {
     }
 
   else {
-    this.alert({show: true, msgAlert: "Sucesso", type: "info"});;
+    this.alert({show: true, msgAlert: "Sucesso", type: "success"});;
     window.open("/adm")
       } 
     }

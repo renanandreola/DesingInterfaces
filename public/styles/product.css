@@ -21,10 +21,9 @@ p.p {
 }
 
 a.btn {
-    background-color: #FF6600;
     color: black;
     font-weight: bold;
     font-family: 'Arvo', serif;
-    font-size: 15px;
-    float: right;
+    font-size: 20px;
+    width: 100%;
 }

@@ -9,7 +9,7 @@
     <div class="form-row row">
         <div class="col-12" data-bind="with: alert">
             <div class="alert" data-bind="text: msgAlert,
-                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info'), 'alert-success': (type == 'success')},
                                           visible: show">
 
             </div>
@@ -103,7 +103,7 @@
     <br>
     <div class="row">
         <div class="col-12 mt-4 d-flex justify-content-center">
-            <a href="#" class="btn d-flex justify-content-center" type="submit" id="btnSend" data-bind="click: submitForm">Cadastrar</a>
+            <a href="#" class="btn btn-success d-flex justify-content-center" type="submit" id="btnSend" data-bind="click: submitForm">Cadastrar</a>
             <!-- <a href="/index" class="btn btn-outline-success btn-block float-left col-2" name="button">Voltar</a> -->
         </div>
     </div>

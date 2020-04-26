@@ -1,10 +1,9 @@
 div.form-row {
     width: 800px;
-    margin-left: 250px;
+    margin-left: 440px;
 }
 
 div a.btn {
-    background-color: #FF6600;
     color: black;
     font-weight: bold;
     font-family: 'Arvo', serif;

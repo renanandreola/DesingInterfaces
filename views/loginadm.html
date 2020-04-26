@@ -12,7 +12,7 @@
       <form class="mt-5" method="post">
         <div class="col-12" data-bind="with: alert">
             <div class="alert" data-bind="text: msgAlert,
-                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info'), 'alert-success': (type == 'success')},
                                           visible: show">
 
             </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="buttons col-12 col-sm-3 mt-4 text-center">
-            <a href="#" class="orange btn btn- d-flex justify-content-center" id="enter" type="submit" data-bind="click: submitForm">Entrar</a>
+            <a href="#" class="orange btn btn-success d-flex justify-content-center" id="enter" type="submit" data-bind="click: submitForm">Entrar</a>
           </div>
         </div>
       </form>

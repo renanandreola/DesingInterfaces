@@ -17,7 +17,7 @@ function formViewModel() {
     }   
   
     if(this.email() === ""){
-      this.alert({show: true, msgAlert: "Preencha sua email", type: "danger"});
+      this.alert({show: true, msgAlert: "Preencha seu email", type: "danger"});
     return
     }
 
@@ -27,7 +27,7 @@ function formViewModel() {
       }
 
   else {
-    this.alert({show: true, msgAlert: "Sucesso", type: "info"});;
+    this.alert({show: true, msgAlert: "Sucesso", type: "success"});;
       } 
     }
  }

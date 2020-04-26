@@ -10,7 +10,7 @@
       <form class="mt-5" method="post">
         <div class="col-12" data-bind="with: alert">
             <div class="alert" data-bind="text: msgAlert,
-                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info'), 'alert-success': (type == 'success')},
                                           visible: show">
 
             </div>
@@ -27,13 +27,24 @@
             <input type="password" placeholder="senha" name="" value="" id="password" class="form-control" data-bind="value: senha">
           </div>
         </div>
+<br>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+            <input type="radio" aria-label="Radio button for following text input">
+            </div>
+          </div>
+         <p class="remember-password">Lembrar senha</p>
+        </div>
+
         <div class="row d-flex justify-content-center">
           <div class="buttons col-12 col-sm-3 mt-4 text-center">
-            <a href="#" class="orange btn btn- d-flex justify-content-center" id="enter" type="submit" data-bind="click: submitForm">Entrar</a>
+            <a href="#" class="orange btn btn-success d-flex justify-content-center" id="enter" type="submit" data-bind="click: submitForm">Entrar</a>
             <br>
-            <a href="/register" class="btn btn-success btn-block">Cadastre-se</a>
+            <a href="/register" class="btn btn-primary btn-block">Cadastre-se</a>
           </div>
         </div>
+        
       </form>
     </div>
   </div>
@@ -78,7 +89,7 @@
     <hr>
     <br>
     <h5 class="total d-flex justify-content-center">TOTAL A PAGAR: R$ 240,00</h5>
-    <a href="#" class="finish btn btn- d-flex justify-content-center">Finalizar pedido</a>
+    <a href="#" class="finish btn btn-success d-flex justify-content-center">Finalizar pedido</a>
   </div>
 </div>
 {% endblock %}

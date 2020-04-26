@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-12" data-bind="with: alert">
                 <div class="alert" data-bind="text: msgAlert,
-                                              css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info')},
+                                              css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info'), 'alert-success': (type == 'success')},
                                               visible: show">
     
                 </div>
@@ -35,7 +35,7 @@
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
               <div class="enter">
-                <a href="#" class="btn d-flex justify-content-center" type="submit" data-bind="click: submitForm">Enviar</a>
+                <a href="#" class="btn btn-success d-flex justify-content-center" type="submit" data-bind="click: submitForm">Enviar</a>
                 </div>
                 <div class="limpa">
                     <button type="reset" class="clear btn btn-danger">Limpar</button>
