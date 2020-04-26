@@ -10,5 +10,13 @@ div ul li a.nav-link{
 }
 
 footer{
-    background-color: rgb(221, 221, 221);
+    background-color: black;
+}
+
+footer h5{
+    color: white;
+}
+
+footer p {
+    color: white;
 }
