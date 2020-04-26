@@ -21,7 +21,7 @@ function formViewModel() {
 
   else {
     this.alert({show: true, msgAlert: "Sucesso", type: "success"});;
-    window.open("/adm")
+    window.open("/initadm")
       } 
     }
  }

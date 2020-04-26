@@ -1,13 +1,12 @@
-div.box {
-    background-color: rgb(238, 238, 238);
-    height: 500px;
-}
-
 div.div-title {
     background-color: yellow;
     height: 60px;
     border-radius: 10px;
     font-family: 'Arvo', serif;
+}
+
+form input.search{
+    width: 300px;
 }
 
 div.tarja{
@@ -23,17 +22,4 @@ div.tarja h4{
     font-size: 30px;
     padding-top: 18px;
     font-family: 'Arvo', serif;
-}
-
-div a.orange{
-    color: black;
-    font-weight: bold;
-    font-family: 'Arvo', serif;
-}
-
-div a.orange-ac{
-    color: black;
-    font-weight: bold;
-    font-family: 'Arvo', serif;
-    margin-top: 65px;
 }

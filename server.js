@@ -67,4 +67,21 @@ app.get('/adm', (req, res) => {
   res.render('adm.html')
 });
 
+app.get('/initadm', (req, res) => {
+  res.render('initadm.html')
+});
+
+app.get('/clients', (req, res) => {
+  res.render('clients.html')
+});
+
+app.get('/inputproducts', (req, res) => {
+  res.render('inputproducts.html')
+});
+
+app.get('/inputclients', (req, res) => {
+  res.render('inputclients.html')
+});
+
+
 

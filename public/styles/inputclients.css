@@ -1,8 +1,3 @@
-div.box {
-    background-color: rgb(238, 238, 238);
-    height: 500px;
-}
-
 div.div-title {
     background-color: yellow;
     height: 60px;
@@ -25,15 +20,6 @@ div.tarja h4{
     font-family: 'Arvo', serif;
 }
 
-div a.orange{
-    color: black;
-    font-weight: bold;
-    font-family: 'Arvo', serif;
-}
-
-div a.orange-ac{
-    color: black;
-    font-weight: bold;
-    font-family: 'Arvo', serif;
-    margin-top: 65px;
+form {
+    margin-left: 100px;
 }

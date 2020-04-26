@@ -1,0 +1,120 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+<div class="div-title">
+    <h1 class="title d-flex justify-content-center">Olá administrador</h1>
+</div>
+<hr>
+<a href="/initadm"><button type="button" class="btn btn-outline-dark ml-2 col-2">Voltar</button></a>
+<hr>
+
+<div class="box">
+<div class="tarja">
+    <h4>Cadastrar motos</h4>
+</div>        
+<br>
+<form class="col-10">
+    <div class="col-12" data-bind="with: alert">
+        <div class="alert" data-bind="text: msgAlert,
+                                      css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info'), 'alert-success': (type == 'success')},
+                                      visible: show">
+
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nome da moto</label>
+      <input class="form-control" id="nomeMoto" data-bind="value: nomeMoto">
+      
+    </div>
+    <div class="form-group">
+        <label for="">Marca da moto</label>
+        <input class="form-control" id="marcaMoto" data-bind="value: marcaMoto">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Ano da moto</label>
+        <input class="form-control" id="anoMoto" data-bind="value: anoMoto">
+      </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Modelo da moto</label>
+      <input type="password" class="form-control" id="modeloMoto" data-bind="value: modeloMoto">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Preço da moto</label>
+        <input type="password" class="form-control" id="precoMoto" data-bind="value: precoMoto">
+      </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Exibir na página de produtos</label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Exibir na página inicial</label>
+      </div>
+      <br>
+      <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-success" data-bind="click: submitForm">Cadastrar moto</button>
+</div>
+</form>
+
+<br>
+ <hr>
+ <br>
+
+ <div class="box">
+    <div class="tarja">
+        <h4>Cadastrar acessórios</h4>
+    </div>        
+    <br>
+    <form class="col-10">
+        <div class="col-12" data-bind="with: alert">
+            <div class="alert" data-bind="text: msgAlert,
+                                          css: {'alert-danger': (type == 'danger'), 'alert-info': (type == 'info'), 'alert-success': (type == 'success')},
+                                          visible: show">
+
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nome do acessório</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" data-bind="value: nomeAc">
+          
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Marca do acessório</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" data-bind="value: marcaAc">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Modelo do acessório</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" data-bind="value: modeloAc">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Preço do acessório</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" data-bind="value: precoAc">
+          </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Exibir na página de produtos</label>
+        </div>
+        <br>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Exibir na página inicial</label>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-success" data-bind="click: submitForm">Cadastrar acessório</button>
+    </div>
+    </form>
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+{% block script %}
+<script src="/js/inputproducts.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/styles/inputproducts.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends './layouts/base.html' %}
+
+{% block content %}
+<div class="div-title">
+    <h1 class="title d-flex justify-content-center">Olá administrador</h1>
+</div>
+<hr>
+<a href="/initadm"><button type="button" class="btn btn-outline-dark ml-2 col-2">Voltar</button></a>
+<hr>
+
+<div class="box">
+    <div class="tarja">
+        <h4>Encontrar clientes</h4>
+    </div>        
+<br>
+
+<form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+    <input class="search form-control mr-sm-2" type="search" placeholder="Buscar clientes" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+</form>
+
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Tel</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">CEP</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Remover</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Nome cliente</td>
+        <td>exmplo@email.com</td>
+        <td>(00)00000-0000</td>
+        <td>Cidade</td>
+        <td>Endereço cliente</td>
+        <td>0000000</td>
+        <td>Estado</td>
+        <td><button type="button" class="btn btn-danger">Remover</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Nome cliente</td>
+        <td>exmplo@email.com</td>
+        <td>(00)00000-0000</td>
+        <td>Cidade</td>
+        <td>Endereço cliente</td>
+        <td>0000000</td>
+        <td>Estado</td>
+        <td><button type="button" class="btn btn-danger">Remover</button></td>
+      </tr>
+      <tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Nome cliente</td>
+            <td>exmplo@email.com</td>
+            <td>(00)00000-0000</td>
+            <td>Cidade</td>
+            <td>Endereço cliente</td>
+            <td>0000000</td>
+        <td>Estado</td>
+        <td><button type="button" class="btn btn-danger">Remover</button></td>
+          </tr>
+          <tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Nome cliente</td>
+                <td>exmplo@email.com</td>
+                <td>(00)00000-0000</td>
+                <td>Cidade</td>
+                <td>Endereço cliente</td>
+                <td>0000000</td>
+        <td>Estado</td>
+        <td><button type="button" class="btn btn-danger">Remover</button></td>
+              </tr>
+              <tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Nome cliente</td>
+                    <td>exmplo@email.com</td>
+                    <td>(00)00000-0000</td>
+                    <td>Cidade</td>
+                    <td>Endereço cliente</td>
+                    <td>0000000</td>
+        <td>Estado</td>
+        <td><button type="button" class="btn btn-danger">Remover</button></td>
+                  </tr>
+                  <tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Nome cliente</td>
+                        <td>exmplo@email.com</td>
+                        <td>(00)00000-0000</td>
+                        <td>Cidade</td>
+                        <td>Endereço cliente</td>
+                        <td>0000000</td>
+        <td>Estado</td>
+        <td><button type="button" class="btn btn-danger">Remover</button></td>
+                      </tr>
+                      <tr>
+    </tbody>
+  </table>
+  <br>
+ 
+{% endblock %}
+
+{% block title %}
+  
+{% endblock %}
+
+{% block script %}
+<script src="/js/clients.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/styles/clients.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+{% endblock %}

@@ -1,0 +1,10 @@
+div.div-title {
+    background-color: yellow;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Arvo', serif;
+}
+
+nav div.items-menu {
+    margin-left: 500px;
+}
